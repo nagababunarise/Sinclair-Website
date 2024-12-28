@@ -1,6 +1,6 @@
 /* Main Navbar Styles */
 .nav-bar {
-  background: transparent;
+  background: #14213d;
   width: 100%;
   color: #fff;
   padding: 20px 12%;
@@ -12,6 +12,7 @@
   justify-content: space-between;
   z-index: 10;
   transition: background-color 0.3s ease;
+  position: fixed;
 }
 
 .nav-logo {

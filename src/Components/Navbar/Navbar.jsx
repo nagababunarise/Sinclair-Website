@@ -2,55 +2,53 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import classNames from "classnames";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      window.scrollY > 100 ? setSticky(true) : setSticky(false);
-    });
+    const handleScroll = () => setSticky(window.scrollY > 100);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <nav className={`nav-bar ${sticky ? "dark-nav" : " "}`}>
+    <nav className={classNames("nav-bar", { "dark-nav": sticky })}>
       <h1>
         <Link to="/" className="nav-logo">
           Sinclair
         </Link>
       </h1>
-      <GiHamburgerMenu onClick={toggleMenu} className="menu-icon" />
-      <ul className={`nav-links ${isOpen ? "show-menu" : ""}`}>
-        <li>
-          <Link to="/about" className="nav-bar-links">
-            About Us
-          </Link>
-        </li>
-        <li>
-          <Link to="/ourMusic" className="nav-bar-links">
-            Our Music
-          </Link>
-        </li>
-        <li>
-          <Link to="/services" className="nav-bar-links">
-            Services
-          </Link>
-        </li>
-        <li>
-          <Link to="/portfolio" className="nav-bar-links">
-            Portfolio
-          </Link>
-        </li>
-        <li>
-          <Link to="/contacts" className="nav-bar-links">
-            Contacts
-          </Link>
-        </li>
+      <GiHamburgerMenu
+        onClick={toggleMenu}
+        className="menu-icon"
+        aria-expanded={isOpen}
+        aria-label="Toggle navigation menu"
+      />
+      <ul className={classNames("nav-links", { "show-menu": isOpen })}>
+        {["About Us", "Our Music", "Services", "Portfolio", "Contacts"].map(
+          (label, idx) => (
+            <li key={idx}>
+              <Link
+                to={`/${label.replace(/\s+/g, "").toLowerCase()}`}
+                className="nav-bar-links"
+                onClick={handleLinkClick}
+              >
+                {label}
+              </Link>
+            </li>
+          )
+        )}
       </ul>
     </nav>
   );

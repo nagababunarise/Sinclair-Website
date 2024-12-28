@@ -2,7 +2,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.673), rgba(0, 0, 0, 0.759)),
     url("../../Assets/ServicesBgImg.webp");
   background-size: cover;
-  padding: 7% 12% 7% 12%;
+  padding: 10% 12% 10% 12%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -93,6 +93,7 @@
 @media screen and (max-width: 900px) {
   .services-bg h1 {
     font-size: 40px;
+    padding-top: 35px;
   }
   .service-card-responsive {
     padding: 3%;
@@ -125,6 +126,7 @@
 @media screen and (max-width: 750px) {
   .services-bg h1 {
     font-size: 30px;
+    padding-top: 40px;
   }
   .service-card-responsive {
     padding: 3%;

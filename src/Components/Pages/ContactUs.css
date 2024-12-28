@@ -2,7 +2,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.512), rgba(0, 0, 0, 0.642)),
     url("../../Assets/ContactBgImg.jpg");
   background-size: cover;
-  padding: 7% 12% 7% 12%;
+  padding: 10% 12% 10% 12%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,6 +140,7 @@
 @media screen and (max-width: 1200px) {
   .contact-section h1 {
     font-size: 30px;
+    padding-top: 40px;
   }
   .address-card {
     padding: 4%;
