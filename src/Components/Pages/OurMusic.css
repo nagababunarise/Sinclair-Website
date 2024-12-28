@@ -1,7 +1,7 @@
 .our-music-page {
   background: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.593)),
     url("../../Assets/OurMusicPageBgImg.jpeg");
-  padding: 7% 12% 7% 12%;
+  padding: 10% 12% 10% 12%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,6 +43,7 @@
   }
   .our-music-page h1 {
     font-size: 20px;
+    padding-top:40px;
   }
   .our-music-images-section div img {
     height: 280px;
