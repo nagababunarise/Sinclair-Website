@@ -1,0 +1,48 @@
+.meet-owner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 12% 5% 12%;
+}
+.meet-owner div h1 {
+  color: #333;
+  font-size: 50px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.meet-owner div h1::first-letter {
+  text-decoration: underline;
+  text-decoration-color: #277da1;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 20px;
+}
+.meet-image {
+  width: 45%;
+  height: 50vh;
+}
+.meet-owner div p {
+  color: #6c757d;
+  width: 90%;
+  font-size: 15px;
+  line-height: 35px;
+}
+
+/*----------------Mobile View Media Quires-----------------*/
+
+@media screen and (max-width: 800px) {
+  .meet-owner {
+    padding: 5%;
+    flex-direction: column;
+  }
+  .meet-owner div h1 {
+    font-size: 30px;
+  }
+  .meet-owner div p {
+    font-size: 15px;
+  }
+  .meet-image {
+    width: 100%;
+    height: 300px;
+    margin: 30px 10px 30px 10px;
+  }
+}

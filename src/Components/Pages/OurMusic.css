@@ -1,0 +1,211 @@
+.our-music-page {
+  background: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.593)),
+    url("../../Assets/OurMusicPageBgImg.jpeg");
+  padding: 7% 12% 7% 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+.our-music-page h1 {
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+/*------------------------OurMusic Photos CSS Source code----------------*/
+
+.our-music-images-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7% 12% 7% 12%;
+  flex-wrap: wrap;
+}
+.our-music-images-section div img {
+  height: 300px;
+  width: 350px;
+  margin: 20px;
+}
+.our-music-images-section div p {
+  text-align: center;
+  color: #452c2c;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/*-------------------Mobile View Media quires----------------------*/
+
+@media screen and (max-width: 750px) {
+  .our-music-page {
+    padding: 8% 3% 8% 3%;
+  }
+  .our-music-page h1 {
+    font-size: 20px;
+  }
+  .our-music-images-section div img {
+    height: 300px;
+    width: 100%;
+    min-width: 300px;
+    margin: 10px;
+  }
+  .our-music-images-section div p {
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+}
+
+/*----------------our-music-banner-section---------------*/
+.our-music-banner-section {
+  background-image: linear-gradient(
+      rgba(249, 6, 6, 0.533),
+      rgba(0, 0, 255, 0.516)
+    ),
+    url("../../Assets/OurMusicBannerBg.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5% 12% 5% 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.our-music-banner-section h1 {
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+.banner-button {
+  display: flex;
+  background: #fd0f67;
+  align-items: center;
+  padding: 10px 25px 10px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #fff;
+}
+.btn-icon {
+  font-size: 25px;
+  margin-right: 10px;
+  color: black;
+}
+.banner-button:hover {
+  color: #fd0f67;
+  background: #fff;
+  border: 1px solid #fd0f67;
+  transition: 1s;
+}
+.banner-btn-responsive {
+  display: flex;
+  margin: 50px 30px 30px 30px;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*---------------------Mobile View OurMusic Banner Source Code-----------------*/
+
+@media screen and (max-width: 768px) {
+  .our-music-banner-section h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .banner-button {
+    padding: 5px 10px 5px 10px;
+    font-size: 10px;
+  }
+  .banner-btn-responsive {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*------------------Black Ice Section Code-----------------*/
+.black-ice-section {
+  background: #14213d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 12% 5% 12%;
+}
+.black-ice-section h1 {
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+}
+.black-ice-section img {
+  width: 100%;
+  margin-top: 50px;
+}
+
+/*-------------------Mobile View Media quires-----------*/
+
+@media screen and (max-width: 768px) {
+  .black-ice-section {
+    padding: 5%;
+  }
+  .black-ice-section h1 {
+    font-size: 30px;
+  }
+}
+
+/*-------------------------Video Blog Section Code-----------------*/
+
+.video-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 12% 5% 12%;
+}
+.video-blog h1 {
+  color: #393535;
+  font-size: 60px;
+  letter-spacing: 1px;
+}
+.video-blog-responsive {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+.video-blog-responsive div img {
+  width: 570px;
+  height: 300px;
+  margin: 20px;
+}
+.video-blog-responsive div p {
+  padding-left: 20px;
+  color: #452c2c;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/*------------------------Mobile view Media Queries ------------------*/
+
+@media screen and (max-width: 768px) {
+  .video-blog {
+    padding: 3%;
+  }
+  .video-blog h1 {
+    font-size: 30px;
+  }
+  .video-blog-responsive {
+    flex-direction: column;
+  }
+  .video-blog-responsive div img {
+    width: 300px;
+    min-width: 100%;
+    margin: 10px;
+  }
+  .video-blog-responsive div p {
+    font-size: 12px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,63 @@
+.lets-plan {
+  background: linear-gradient(#5aa3f1, #1f1f1fcd),
+    url("../../Assets/LetsImage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5% 12% 5% 12%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.lets-plan h1 {
+  color: #fff;
+  font-size: 55px;
+  text-align: center;
+}
+hr {
+  width: 40px;
+  background-color: #277da1;
+  margin: 5px auto;
+}
+.lets-plan p {
+  color: #fff;
+  text-align: center;
+  padding: 40px 0px 40px 0px;
+  letter-spacing: 1px;
+  width: 600px;
+}
+.lets-plan button {
+  padding: 12px 22px 12px 22px;
+  color: #fff;
+  background-color: #e33033;
+  outline: none;
+  border-radius: 30px;
+  border-color: #e33033;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px 40px 30px 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 2px solid #e33033;
+}
+
+/*------------------Mobile View Media queries----------*/
+
+@media screen and (max-width: 800px) {
+  .lets-plan {
+    padding: 5%;
+  }
+  .lets-plan h1 {
+    font-size: 30px;
+  }
+  .lets-plan p {
+    text-align: center;
+    font-size: 15px;
+    max-width: 350px;
+  }
+  .lets-plan button {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,354 @@
+about-us-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.669), rgba(0, 0, 0, 0.731)),
+    url("../../Assets/AboutPageBgImg.jpg");
+  background-size: cover;
+  padding: 7% 12% 7% 12%;
+}
+.about-us-bg h1 {
+  color: #fff;
+  font-size: 55px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.about-col1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 12% 3% 12%;
+  align-items: center;
+}
+.about-col1 img {
+  width: 50%;
+  height: 300px;
+  margin-right: 100px;
+}
+.about-col2 {
+  width: 50%;
+  width: 570px;
+}
+.about-col2 h2 {
+  font-size: 40px;
+  color: #52475a;
+  padding-bottom: 20px;
+}
+.about-col2 h2::first-letter {
+  text-decoration: underline;
+  text-decoration-color: #277da1;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 10px;
+}
+.about-col2 p {
+  color: #988fa2;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.about-col3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 12% 5% 12%;
+}
+
+.about-col3 p {
+  color: #988fa2;
+  font-size: 15px;
+  line-height: 30px;
+  width: 50%;
+}
+.about-col3 img {
+  width: 576px;
+  width: 50%;
+  height: 300px;
+  margin-left: 100px;
+}
+
+/*--------------------------Tab View Media quires------------------*/
+
+@media screen and (max-width: 900px) {
+  .about-us-bg h1 {
+    font-size: 30px;
+  }
+  .about-col1 {
+    padding: 5%;
+  }
+  .about-col1 img {
+    width: 60%;
+    margin-right: 50px;
+  }
+  .about-col2 p {
+    font-size: 13px;
+    padding-right: 20px;
+  }
+  .about-col2 h2 {
+    font-size: 20px;
+  }
+  .about-col3 {
+    padding: 5%;
+  }
+  .about-col3 p {
+    font-size: 13px;
+  }
+  .about-col3 img {
+    width: 50%;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-col1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-col1 img {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .about-col2 {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .about-col2 h2 {
+    font-size: 25px;
+  }
+  .about-col2 p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .about-col3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-col3 p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .about-col3 img {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+
+/*--------------------------about-quote-section Code------------------*/
+.about-quote-section {
+  background-image: linear-gradient(
+      rgba(186, 79, 79, 0.669),
+      rgba(61, 116, 235, 0.85)
+    ),
+    url("../../Assets/AboutQuoteBgImg.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 7% 12% 7% 12%;
+}
+.about-quote-section p {
+  color: #fff;
+  text-align: center;
+  border-style: solid;
+  padding: 30px;
+  border-left: none;
+  border-right: none;
+  font-size: 15px;
+  margin-top: 40px;
+  line-height: 30px;
+}
+.about-quote-section h1 {
+  color: #fff;
+  padding-top: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+/*------------------Our Team Code in About--------------------------*/
+.our-video-bg {
+  background: #14213d;
+  padding: 5% 8% 5% 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.our-video-bg h2 {
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+.responsive-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.team-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.team-card img {
+  width: 350px;
+  height: 230px;
+  max-width: 100%;
+  margin: 30px;
+}
+.team-card h1 {
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+.team-card p {
+  color: #fff;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+}
+.link-font {
+  font-size: 30px;
+  color: rgba(241, 22, 22, 0.919);
+  margin: 5px;
+  cursor: pointer;
+}
+.link-font:hover {
+  color: #fff;
+  background: rgba(241, 22, 22, 0.919);
+  border-radius: 100%;
+  transition: 1s;
+}
+
+/*---------------Tab View Section Code------------------*/
+@media screen and (max-width: 900px) {
+  .our-video-bg {
+    padding: 3%;
+  }
+  .our-video-bg h2 {
+    font-size: 25px;
+  }
+  .team-card img {
+    width: 400px;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our-video-bg {
+    padding: 3%;
+  }
+  .responsive-cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .team-card {
+    width: 100%;
+  }
+  .team-card img {
+    width: 580px;
+    margin: 20px 10px 10px 10px;
+    max-width: 100%;
+    height: 250px;
+  }
+}
+/*---------------Gallery Section Code-----------------*/
+
+.gallery-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 12% 5% 12%;
+}
+.gallery-section h1 {
+  font-size: 45px;
+  color: #52475a;
+}
+.gallery-responsive {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.gallery-responsive img {
+  height: 220px;
+  width: 350px;
+  margin: 20px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .gallery-section {
+    padding: 3%;
+  }
+  .gallery-section img {
+    width: 580px;
+    margin: 20px 10px 10px 10px;
+    max-width: 100%;
+    height: 250px;
+  }
+}
+
+/*-----------------Hire Banner Section Code--------------*/
+
+.hire-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7% 12% 7% 12%;
+  background-image: linear-gradient(
+      rgba(248, 40, 40, 0.694),
+      rgba(121, 121, 241, 0.635)
+    ),
+    url("../../Assets/HireBannerBgImg1.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hire-section h1 {
+  color: #fff;
+  font-size: 55px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.hr3 {
+  width: 50px;
+  height: 3px;
+  background-color: #1eb6c4;
+  border: none;
+  margin: 0px auto;
+}
+.hire-section p {
+  color: #fff;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 17px;
+}
+.hire-section button {
+  padding: 10px 30px 10px 30px;
+  margin: 20px 0px 0px 0px;
+  font-size: 15px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  outline: none;
+  border: 0;
+  font-weight: 600;
+  color: #fff;
+  background: rgb(218, 28, 28);
+}

@@ -1,0 +1,88 @@
+.testimonials {
+  background-image: linear-gradient(#111112b4, #1e1c1cef),
+    url("../../Assets/TestimonialsBgImg1.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 12% 5% 12%;
+}
+.testimonials h1 {
+  color: #fff;
+  font-size: 55px;
+  letter-spacing: 1px;
+}
+.testimonials-content-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-top: 40px;
+}
+.testimonials-content-section li {
+  background: #fd0f67ba;
+  padding: 20px;
+  margin: 30px;
+  width: 370px;
+  height: 526px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  text-align: center;
+}
+.para {
+  line-height: 28px;
+  color: #e5e1da;
+  font-size: 15px;
+}
+.date-text {
+  padding-top: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+}
+.testimonials-content-section li h2 {
+  color: #f1f0f0;
+  font-size: 20px;
+  padding-top: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.designation-text {
+  padding-top: 40px;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/*------------------------Mobile View Media Quires ----------------------*/
+
+@media screen and (max-width: 800px) {
+  .testimonials {
+    padding: 5%;
+  }
+  .testimonials h1 {
+    font-size: 35px;
+  }
+  .testimonials-content-section li {
+    width: 100%;
+  }
+  .para {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .date-text {
+    font-size: 12px;
+  }
+  .testimonials-content-section li h2 {
+    font-size: 16px;
+  }
+  .designation-text {
+    font-size: 10px;
+  }
+}

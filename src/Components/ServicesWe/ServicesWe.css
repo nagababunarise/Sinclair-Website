@@ -1,0 +1,89 @@
+.service {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5% 12% 5% 12%;
+}
+
+.service h1 {
+  color: #333;
+  font-size: 60px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.service h1 span {
+  text-decoration-line: underline;
+  text-decoration-color: #277da1;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 20px;
+}
+.service ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 3%;
+}
+.service li {
+  margin: 20px;
+}
+.service li img {
+  width: 280px;
+  height: 200px;
+}
+.service li p {
+  text-align: center;
+  font-weight: 700;
+  color: #7c6666;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-top: 10px;
+}
+.view-button {
+  padding: 12px 22px 12px 22px;
+  background-color: #fff;
+  color: #e33033;
+  outline: none;
+  border-radius: 30px;
+  border-color: #e33033;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 30px 40px 30px 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 2px solid #e33033;
+}
+.request-btn {
+  background: #e33033;
+  color: #fff;
+}
+
+.view-button:hover {
+  background: #e33033;
+  color: #fff;
+  transition: 1s;
+}
+.request-btn:hover {
+  background: #fff;
+  color: #e33033;
+  transition: 1s;
+}
+
+/*--------------------Mobile View Quires------------------------*/
+
+@media screen and (max-width: 800px) {
+  .service {
+    padding: 5%;
+  }
+  .service h1 {
+    font-size: 35px;
+  }
+  .service li img {
+    width: 90%;
+    width: 350px;
+  }
+  .view-button {
+    font-size: 13px;
+  }
+}

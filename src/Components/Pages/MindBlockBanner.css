@@ -1,0 +1,39 @@
+.mind-block-banner {
+  background: linear-gradient(rgba(231, 43, 43, 0.722), rgba(37, 37, 221, 0.71)),
+    url("../../Assets/MindBlockBgImg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 7% 12% 7% 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+.mind-block-banner h1 {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+
+.mind-block-banner button {
+  background: #fd0f67;
+  padding: 10px 15px 10px 15px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 10px;
+  outline: 0;
+  border: 0;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 786px) {
+  .mind-block-banner h1 {
+    font-size: 25px;
+  }
+  .mind-block-banner button {
+    font-size: 14px;
+  }
+}

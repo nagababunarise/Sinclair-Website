@@ -1,0 +1,66 @@
+.about {
+  display: flex;
+  align-items: center;
+  padding: 5% 12% 5% 12%;
+  max-height: 100%;
+}
+.about-image {
+  width: 45%;
+}
+.about div p {
+  color: #9d8189;
+  width: 90%;
+  line-height: 35px;
+}
+.about div h1 {
+  color: #333;
+  font-size: 60px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.about div h1::first-letter {
+  text-decoration: underline;
+  text-decoration-color: #277da1;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 20px;
+}
+.about div button {
+  background: transparent;
+  padding: 10px 25px 10px 25px;
+  margin: 30px 0px 0px 0px;
+  border-radius: 30px;
+  color: #e33033;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #e33033;
+}
+.about div button:hover {
+  background: #e33033;
+  color: #fff;
+  transition: 1s;
+}
+
+/*---------------------------MObile View Quires--------------*/
+
+@media screen and (max-width: 800px) {
+  .about {
+    flex-direction: column;
+    padding: 5%;
+  }
+  .about div h1 {
+    font-size: 30px;
+  }
+  .about div p {
+    font-size: 15px;
+  }
+  .about div button {
+    font-size: 15px;
+  }
+  .about-image {
+    width: 90%;
+    margin: 30px 0px 20px 10px;
+  }
+}

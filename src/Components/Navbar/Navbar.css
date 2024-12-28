@@ -1,0 +1,95 @@
+/* Main Navbar Styles */
+.nav-bar {
+  background: transparent;
+  width: 100%;
+  color: #fff;
+  padding: 20px 12%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.nav-logo {
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-bar-links {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-bar-links:hover {
+  color: #e33033;
+  transition: color 0.5s ease;
+}
+
+/* Sticky Navbar */
+.dark-nav {
+  background: #14213d;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+  font-size: 25px;
+  display: none;
+  cursor: pointer;
+}
+
+/* Responsive Styles for Mobile View */
+@media screen and (max-width: 900px) {
+  .menu-icon {
+    display: block;
+  }
+  .nav-bar {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .nav-bar ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #14213d;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    padding: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-bar ul.show-menu {
+    display: flex;
+  }
+
+  .nav-bar-links {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-bar-links:hover {
+    color: #f73434;
+    transition: background-color 0.3s ease;
+  }
+}

@@ -1,0 +1,68 @@
+.check-bg {
+  background: linear-gradient(rgb(100, 140, 250), rgba(4, 4, 4, 0.543)),
+    url("../../Assets/ChecklistBgImg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 12% 5% 12%;
+}
+.check-content {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.check-content h1 {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
+
+.check-content ul {
+  list-style-type: none;
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.check-content ul li {
+  background: #ededed4d;
+  padding: 30px 20px 30px 20px;
+  font-size: 20px;
+  margin: 30px;
+  text-align: center;
+  height: 180px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+hr {
+  width: 50px;
+  height: 3px;
+  background-color: #1eb6c4;
+  border: none;
+  margin: 5px auto;
+}
+
+/*---------------------Mobile View Media Quires--------------------*/
+
+@media screen and (max-width: 800px) {
+  .check-bg {
+    padding: 5%;
+  }
+  .check-content h1 {
+    font-size: 30px;
+  }
+  .check-content ul li {
+    width: 100%;
+  }
+}

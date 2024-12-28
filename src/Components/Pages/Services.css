@@ -1,0 +1,160 @@
+.services-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.673), rgba(0, 0, 0, 0.759)),
+    url("../../Assets/ServicesBgImg.webp");
+  background-size: cover;
+  padding: 7% 12% 7% 12%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.services-bg h1 {
+  color: #fff;
+  font-size: 50px;
+}
+.service-card-responsive {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5% 12% 5% 12%;
+}
+.service-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+.service-card img {
+  width: 45%;
+  height: 320px;
+}
+.service-content {
+  background: #14213d;
+  padding: 30px 30px 30px 30px;
+  width: 60%;
+  height: 320px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.service-content h1 {
+  color: #fff;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.service-content p {
+  color: #fff;
+  line-height: 30px;
+  font-size: 15px;
+}
+.service-content button {
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding-top: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/*-----------------Wedding Banner Source Code-------------------*/
+
+.wedding-banner-card {
+  background: linear-gradient(rgba(0, 0, 0, 0.893), rgba(0, 0, 0, 0.807)),
+    url("../../Assets/WeddingBannerBg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 8% 12% 8% 12%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.wedding-banner-card h1 {
+  color: #fff;
+  font-size: 50px;
+}
+.wedding-banner-card p {
+  text-align: center;
+  line-height: 30px;
+  width: 70%;
+  padding-top: 20px;
+}
+.wedding-banner-card p2 {
+  line-height: 30px;
+  text-align: center;
+  width: 70%;
+}
+
+/*------------------------Media Queries for tab view ------------------------*/
+
+@media screen and (max-width: 900px) {
+  .services-bg h1 {
+    font-size: 40px;
+  }
+  .service-card-responsive {
+    padding: 3%;
+    align-content: center;
+  }
+  .service-card {
+    width: 100%;
+    margin: 20px;
+  }
+  .service-card img {
+    width: 390px;
+    height: 390px;
+  }
+  .service-content {
+    width: 390px;
+    height: 390px;
+  }
+  .service-content h1 {
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+  .service-content p {
+    line-height: 25px;
+    font-size: 15px;
+  }
+}
+
+/*--------------------Mobile View Media quires----------------*/
+
+@media screen and (max-width: 750px) {
+  .services-bg h1 {
+    font-size: 30px;
+  }
+  .service-card-responsive {
+    padding: 3%;
+  }
+  .service-card {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .service-card img {
+    width: 100%;
+  }
+  .service-content {
+    width: 100%;
+    padding: 20px;
+  }
+  .service-content h1 {
+    font-size: 20px;
+  }
+  .service-content p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .service-card:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .wedding-banner-card h1 {
+    font-size: 30px;
+  }
+  .wedding-banner-card p {
+    font-size: 14px;
+    width: 100%;
+  }
+}
